@@ -1,0 +1,45 @@
+{
+  "name": "suzannah-james",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "next": "^8.1.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-jsx-plugin-postcss": "^2.0.0"
+  },
+  "devDependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "cross-env": "^5.2.0",
+    "node-sass": "^4.12.0",
+    "styled-jsx-plugin-sass": "^1.0.0"
+  },
+  "babel": {
+    "presets": [
+      "next/babel",
+      "@babel/env"
+    ],
+    "plugins": [
+      [
+        "styled-jsx/babel",
+        {
+          "plugins": [
+            "styled-jsx-plugin-postcss"
+          ]
+        }
+      ]
+    ]
+  }
+}
