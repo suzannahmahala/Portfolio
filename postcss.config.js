@@ -1,8 +1,5 @@
 module.exports = (ctx) => ({
   plugins: {
-    'postcss-import': {
-      path: `./pages`,
-    },
-    'postcss-cssnext': {},
-  },
+    "postcss-import": ctx.plugin
+  }
 })

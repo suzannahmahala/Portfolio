@@ -12,13 +12,14 @@ export const media = {
 }
 
 export const body = css.global`
-body { 
-  margin: 0;
-  font-family: 'nueu-haas-unica', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}`
+  body { 
+    margin: 0;
+    font-family: 'nueu-haas-unica', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }`
 
-export const container = css`div {
-  padding: 0 21px;
-}`
+export const container = css`
+  div {
+    padding: 0 21px;
+  }`
